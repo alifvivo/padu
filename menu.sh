@@ -27,12 +27,12 @@ echo -e "   $green IP VPS               :$NC  $IPVPS"
 echo -e "   $green DOMAIN               :$NC  $domain"
 echo -e ""
 echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
-echo -e " ${BGBLUE}                     PREMIUM SCRIPT                               ${NC}"
+echo -e " ${BGRED}                     PREMIUM SCRIPT                               ${NC}"
 echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
-figlet WANVPN | lolcat
+figlet PakyaVPN | lolcat
 figlet AutoScript | lolcat 
   echo -e  "  ╔══════════════════════════════════════════════════════════════════╗" | lolcat
-  echo -e  "  ║${BGBLUE}                         ┃ VPS MENU ┃                             ${NC}║"
+  echo -e  "  ║${BGRED}                         ┃ VPS MENU ┃                             ${NC}║"
   echo -e  "  ╠══════════════════════════════════════════════════════════════════╝" | lolcat
   echo -e  "  ║"
   echo -e  "  ║   [ 1 ] ► >>  SSH & OVPN PANEL "
@@ -47,7 +47,7 @@ figlet AutoScript | lolcat
   echo -e  "  ║   [ 10 ] ► >> XRAY PANEL "
   echo -e  "  ║   [ 11 ] ► >> TROJAN PANEL "
   echo -e  "  ╔══════════════════════════════════════════════════════════════════╗" | lolcat
-  echo -e  "  ║${BGBLUE}                          ┃ SISTEM MENU ┃                         ${NC}║"
+  echo -e  "  ║${BGRED}                          ┃ SISTEM MENU ┃                         ${NC}║"
   echo -e  "  ╠══════════════════════════════════════════════════════════════════╝" | lolcat
   echo -e  "  ║   [ 12 ] ► >>  Add New Subdomain     [ 20 ] ► >>  Limit Bandwith "
   echo -e  "  ║   [ 13 ] ► >>  Renew Certificate     [ 21 ] ► >>  Check Usage "
@@ -61,7 +61,7 @@ figlet AutoScript | lolcat
   echo -e  "  ║   [ x ] ► >>  Exit "
   echo -e  "  ║"
   echo -e  "  ╠══════════════════════════════════════════════════════════════════╗" | lolcat
-  echo -e  "  ║${BGBLUE}                 AutoScript Premium By PakyaVPN                   ${NC}║"
+  echo -e  "  ║${BGRED}                 AutoScript Premium By PakyaVPN                   ${NC}║"
   echo -e  "  ╚══════════════════════════════════════════════════════════════════╝" | lolcat
 echo -e   ""
 read -p "     Select From Options [1-27 or x] :  " menu
