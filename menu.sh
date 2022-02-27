@@ -29,7 +29,7 @@ echo -e ""
 echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
 echo -e " ${BGBLUE}                     PREMIUM SCRIPT                               ${NC}"
 echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
-figlet PakyaVPN | lolcat
+figlet WANVPN | lolcat
 figlet AutoScript | lolcat 
   echo -e  "  ╔══════════════════════════════════════════════════════════════════╗" | lolcat
   echo -e  "  ║${BGBLUE}                         ┃ VPS MENU ┃                             ${NC}║"
