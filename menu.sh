@@ -10,14 +10,47 @@ CYAN='\033[0;36m'
 NC='\033[0;37m'
 clear
 echo -e ""
+# DNS Patch
+tipeos2=$(uname -m)
+# OS Uptime
+uptime="$(uptime -p | cut -d " " -f 2-10)"
+# Download
+download=`grep -e "lo:" -e "wlan0:" -e "eth0" /proc/net/dev  | awk '{print $2}' | paste -sd+ - | bc`
+downloadsize=$(($download/1073741824))
+# Upload
+upload=`grep -e "lo:" -e "wlan0:" -e "eth0" /proc/net/dev | awk '{print $10}' | paste -sd+ - | bc`
+uploadsize=$(($upload/1073741824))
+# Getting CPU Information
+cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
+cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
+cpu_usage+=" %"
+# Shell Version
+shellversion=""
+shellversion=Bash
+shellversion+=" Version" 
+shellversion+=" ${BASH_VERSION/-*}" 
+versibash=$shellversion
+# Getting OS Information
+source /etc/os-release
+Versi_OS=$VERSION
+ver=$VERSION_ID
+Tipe=$NAME
+URL_SUPPORT=$HOME_URL
+basedong=$ID
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 IPVPS=$(curl -s ipinfo.io/ip )
-jam=$(date +"%T")
-hari=$(date +"%A")
-tnggl=$(date +"%d-%B-%Y")
 domain=$(cat /etc/v2ray/domain)
+Sver=$(cat /home/version)
+tele=$(cat /home/contact)
+	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
+	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
+	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
+	tram=$( free -m | awk 'NR==2 {print $2}' )
+	uram=$( free -m | awk 'NR==2 {print $3}' )
+	fram=$( free -m | awk 'NR==2 {print $4}' )
+	swap=$( free -m | awk 'NR==4 {print $2}' )
 clear
 echo -e ""
 figlet PakyaVPN | lolcat
@@ -25,13 +58,27 @@ figlet AutoScript | lolcat
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
-echo -e "$green TIME                 :$jam"$NC
-echo -e "$green DAY                  :$hari"$NC
-echo -e "$green DATE                 :$tnggl"$NC
-echo -e "$green SERVER               :$ISP"$NC
-echo -e "$green City                 :$CITY"$NC
+echo -e "$green VPS Type             :$typevps"$NC
+echo -e "$green CPU Model            :$cname"$NC
+echo -e "$green CPU Frequency        :$freq MHz"$NC
+echo -e "$green Number Of Cores      :$cores"$NC
+echo -e "$green CPU Usage            :$cpu_usage"$NC
+echo -e "$green Operating System     :"`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`$NC
+echo -e "$green Kernel               :`uname -r`"$NC
+echo -e "$green Bash Ver             :$versibash"$NC
+echo -e "$green Total Amount Of RAM  :$tram MB"$NC
+echo -e "$green Used RAM             :$uram MB"$NC
+echo -e "$green Free RAM             :$fram MB"$NC
+echo -e "$green System Uptime        :$uptime $DF( From VPS Booting )"$NC
+echo -e "$green Download             :$downloadsize GB ( From Startup / VPS Booting )"$NC
+echo -e "$green Upload               :$uploadsize GB ( From Startup / VPS Booting )"$NC
+echo -e "$green ISP NAME             :$ISP"$NC
 echo -e "$green IP VPS               :$IPVPS"$NC
 echo -e "$green DOMAIN               :$domain"$NC
+echo -e "$green City                 :$CITY"$NC
+echo -e "$green SERVER               :$ISP"$NC
+echo -e "$green Telegram             :$NC  $tele"
+echo -e "$green Script Version       :$NC  $Sver"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
