@@ -29,7 +29,7 @@ echo -e ""
 echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
 echo -e " ${BGRED}                     PREMIUM SCRIPT                               ${NC}"
 echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
-figlet WanVPN | lolcat
+figlet TRICKSTERMODE | lolcat
 figlet AutoScript | lolcat 
   echo -e  "  ╔══════════════════════════════════════════════════════════════════╗" | lolcat
   echo -e  "  ║${BGRED}                         ┃ VPS MENU ┃                             ${NC}║"
