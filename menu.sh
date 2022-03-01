@@ -20,7 +20,7 @@ tnggl=$(date +"%d-%B-%Y")
 domain=$(cat /etc/v2ray/domain)
 clear
 echo -e ""
-figlet TRICKSTERMODE | lolcat
+figlet PakyaVPN | lolcat
 figlet AutoScript | lolcat 
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
@@ -58,7 +58,7 @@ echo -e "$green (•17) $NC Restore Data Vps      $green (•25) $NC Displaying 
 echo -e "$green (•18) $NC WEBMIN MENU           $green (•26) $NC Info Script Auto "
 echo -e "$green (•19) $NC UPDATE TO KERNEL      $green (•27) $NC Show System Status "
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
-echo -e " Premium VPS by @TricksterMode
+echo -e " Premium VPS by @anakjati567"
 echo -e " Thank you for using script by PAKYAVPN"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
@@ -150,9 +150,11 @@ running
 ;;
 x)
 clear
-menu
+exit
 ;;
 *)
 echo " Tolong masukkan nombor yang betul!!"
+sleep 2 
+menu
 ;;
 esac
