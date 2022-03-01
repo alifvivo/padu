@@ -58,7 +58,6 @@ figlet AutoScript | lolcat
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
-echo -e "$green VPS Type             :$typevps"$NC
 echo -e "$green CPU Model            :$cname"$NC
 echo -e "$green CPU Frequency        :$freq MHz"$NC
 echo -e "$green Number Of Cores      :$cores"$NC
@@ -77,8 +76,7 @@ echo -e "$green IP VPS               :$IPVPS"$NC
 echo -e "$green DOMAIN               :$domain"$NC
 echo -e "$green City                 :$CITY"$NC
 echo -e "$green SERVER               :$ISP"$NC
-echo -e "$green Telegram             :$NC  $tele"
-echo -e "$green Script Version       :$NC  $Sver"
+echo -e "$green Telegram             :@anakjati567"$NC
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
