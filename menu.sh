@@ -1,12 +1,13 @@
 #!/bin/bash
-RED='\e[1;31m'
-green='\e[0;32m'
-BLUE='\e[0;34m'
-BGRED='\e[1;41m'
-BGGREEN='\e[1;42m'
-BGYELLOW='\e[1;43m'
+green='\e[32m'
+RED='\033[0;31m'
+NC='\033[0m'
 BGBLUE='\e[1;44m'
-NC='\e[0m'
+ORANGE='\033[0;33m'
+BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0;37m'
 clear
 echo -e ""
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
@@ -18,51 +19,50 @@ hari=$(date +"%A")
 tnggl=$(date +"%d-%B-%Y")
 domain=$(cat /etc/v2ray/domain)
 clear
-echo -e "   $green TIME                 :$NC  $jam"
-echo -e "   $green DAY                  :$NC  $hari"
-echo -e "   $green DATE                 :$NC  $tnggl"
-echo -e "   $green SERVER               :$NC  $ISP"
-echo -e "   $green City                 :$NC  $CITY"
-echo -e "   $green IP VPS               :$NC  $IPVPS"
-echo -e "   $green DOMAIN               :$NC  $domain"
 echo -e ""
-echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
-echo -e " ${BGRED}                     PREMIUM SCRIPT                               ${NC}"
-echo -e  " ══════════════════════════════════════════════════════════════════" | lolcat
 figlet TRICKSTERMODE | lolcat
 figlet AutoScript | lolcat 
-  echo -e  "  ╔══════════════════════════════════════════════════════════════════╗" | lolcat
-  echo -e  "  ║${BGRED}                         ┃ VPS MENU ┃                             ${NC}║"
-  echo -e  "  ╠══════════════════════════════════════════════════════════════════╝" | lolcat
-  echo -e  "  ║"
-  echo -e  "  ║   [ 1 ] ► >>  SSH & OVPN PANEL "
-  echo -e  "  ║   [ 2 ] ► >>  WIREGUARD PANEL "
-  echo -e  "  ║   [ 3 ] ► >>  L2TP PANEL "
-  echo -e  "  ║   [ 4 ] ► >>  PPTP PANEL "
-  echo -e  "  ║   [ 5 ] ► >>  SSTP PANEL "
-  echo -e  "  ║   [ 6 ] ► >>  SSR PANEL "
-  echo -e  "  ║   [ 7 ] ► >>  SS PANEL "
-  echo -e  "  ║   [ 8 ] ► >>  VMESS PANEL "
-  echo -e  "  ║   [ 9 ] ► >>  VLESS PANEL "
-  echo -e  "  ║   [ 10 ] ► >> XRAY PANEL "
-  echo -e  "  ║   [ 11 ] ► >> TROJAN PANEL "
-  echo -e  "  ╔══════════════════════════════════════════════════════════════════╗" | lolcat
-  echo -e  "  ║${BGRED}                          ┃ SISTEM MENU ┃                         ${NC}║"
-  echo -e  "  ╠══════════════════════════════════════════════════════════════════╝" | lolcat
-  echo -e  "  ║   [ 12 ] ► >>  Add New Subdomain     [ 20 ] ► >>  Limit Bandwith "
-  echo -e  "  ║   [ 13 ] ► >>  Renew Certificate     [ 21 ] ► >>  Check Usage "
-  echo -e  "  ║   [ 14 ] ► >>  Change Port           [ 22 ] ► >>  Reboot VPS "
-  echo -e  "  ║   [ 15 ] ► >>  Autobackup Data       [ 23 ] ► >>  Speedtest VPS "
-  echo -e  "  ║   [ 16 ] ► >>  Backup Data VPS       [ 24 ] ► >>  Update Script "
-  echo -e  "  ║   [ 17 ] ► >>  Restore Data VPS      [ 25 ] ► >>  Displaying System "
-  echo -e  "  ║   [ 18 ] ► >>  Webmin Menu           [ 26 ] ► >>  Info Script Auto "
-  echo -e  "  ║   [ 19 ] ► >>  Update To Kernel      [ 27 ] ► >>  Show System Status "
-  echo -e  "  ║"
-  echo -e  "  ║   [ x ] ► >>  Exit "
-  echo -e  "  ║"
-  echo -e  "  ╠══════════════════════════════════════════════════════════════════╗" | lolcat
-  echo -e  "  ║${BGRED}                 AutoScript Premium By PakyaVPN                   ${NC}║"
-  echo -e  "  ╚══════════════════════════════════════════════════════════════════╝" | lolcat
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e "$green TIME                 :$jam"$NC
+echo -e "$green DAY                  :$hari"$NC
+echo -e "$green DATE                 :$tnggl"$NC
+echo -e "$green SERVER               :$ISP"$NC
+echo -e "$green City                 :$CITY"$NC
+echo -e "$green IP VPS               :$IPVPS"$NC
+echo -e "$green DOMAIN               :$domain"$NC
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e "$green (•1) $NC PANEL SSH & OPENVPN"
+echo -e "$green (•2) $NC PANEL WIREGUARDS"
+echo -e "$green (•3) $NC PANEL L2TP "
+echo -e "$green (•4) $NC PANEL PPTP "
+echo -e "$green (•5) $NC PANEL SSTP "
+echo -e "$green (•6) $NC PANEL SSR "
+echo -e "$green (•7) $NC PANEL SS "
+echo -e "$green (•8) $NC PANEL VMESS "
+echo -e "$green (•9) $NC PANEL VLESS "
+echo -e "$green (10) $NC PANEL XRAY "
+echo -e "$green (11) $NC PANEL TROJAN "
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e "${BGBLUE}                     [ SISTEM MENU ]                        ${NC}"
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e "$green (•12) $NC ADD NEW SUBDOMAIN     $green (•20) $NC Limit Bandwith "
+echo -e "$green (•13) $NC RENEW CERTIFICATE     $green (•21) $NC Check Usage "
+echo -e "$green (•14) $NC CHANGE PORT           $green (•22) $NC Reboot VPS "
+echo -e "$green (•15) $NC AUTOBACKUP DATA       $green (•23) $NC Speedtest VPS "
+echo -e "$green (•16) $NC BACKUP DATA VPS       $green (•24) $NC Update Script "
+echo -e "$green (•17) $NC Restore Data Vps      $green (•25) $NC Displaying System "
+echo -e "$green (•18) $NC WEBMIN MENU           $green (•26) $NC Info Script Auto "
+echo -e "$green (•19) $NC UPDATE TO KERNEL      $green (•27) $NC Show System Status "
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e " Premium VPS by @TricksterMode
+echo -e " Thank you for using script by PAKYAVPN"
+echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
+echo -e   ""
+echo -e "[Ctrl + C] For exit from main menu"
 echo -e   ""
 read -p "     Select From Options [1-27 or x] :  " menu
 echo -e ""
@@ -149,7 +149,7 @@ about
 running
 ;;
 x)
-exit
+clear
 menu
 ;;
 *)
