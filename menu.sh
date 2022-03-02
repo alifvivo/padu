@@ -55,12 +55,13 @@ name=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep
 exp=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
 echo -e ""
-echo -e "$PURPLE ██████╗░░█████╗░██╗░░██╗██╗░░░██╗░█████╗░ $NC"
-echo -e "$PURPLE ██╔══██╗██╔══██╗██║░██╔╝╚██╗░██╔╝██╔══██╗ $NC"
-echo -e "$PURPLE ██████╔╝███████║█████═╝░░╚████╔╝░███████║ $NC"
-echo -e "$PURPLE ██╔═══╝░██╔══██║██╔═██╗░░░╚██╔╝░░██╔══██║ $NC"
-echo -e "$PURPLE ██║░░░░░██║░░██║██║░╚██╗░░░██║░░░██║░░██║ $NC"
-echo -e "$PURPLE ╚═╝░░░░░╚═╝░   ╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝ $NC"
+echo -e "$BLUE ████████╗████████╗██╗░░░░░░█████╗░░░██╗██╗██╗░░░██╗ $NC"
+echo -e "$BLUE ╚══██╔══╝╚══██╔══╝██║░░░░░██╔══██╗░██╔╝██║██║░░░██║ $NC"
+echo -e "$BLUE ░░░██║░░░░░░██║░░░██║░░░░░███████║██╔╝░██║██║░░░██║ $NC"
+echo -e "$BLUE ░░░██║░░░░░░██║░░░██║░░░░░██╔══██║███████║██║░░░██║ $NC"
+echo -e "$BLUE ░░░██║░░░░░░██║░░░███████╗██║░░██║╚════██║╚██████╔╝ $NC"
+echo -e "$BLUE ░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░░░╚═╝░╚═════╝░ $NC"
+echo -e "$green Premium Script"$NC
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
