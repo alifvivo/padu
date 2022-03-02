@@ -55,7 +55,12 @@ name=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep
 exp=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $MYIP | awk '{print $3}')
 clear
 echo -e ""
-figlet PAKYAVPN | lolcat
+echo -e "$PURPLE ╔═══╦═══╦╗╔═╦╗──╔╦═══╗$NC"
+echo -e "$PURPLE ║╔═╗║╔═╗║║║╔╣╚╗╔╝║╔═╗║$NC"
+echo -e "$PURPLE ║╚═╝║║─║║╚╝╝╚╗╚╝╔╣║─║║$NC"
+echo -e "$PURPLE ║╔══╣╚═╝║╔╗║─╚╗╔╝║╚═╝║$NC"
+echo -e "$PURPLE ║║──║╔═╗║║║╚╗─║║─║╔═╗║$NC"
+echo -e "$PURPLE ╚╝──╚╝─╚╩╝╚═╝─╚╝─╚╝─╚╝$NC"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
@@ -77,9 +82,9 @@ echo -e "$green IP VPS               :$IPVPS"$NC
 echo -e "$green DOMAIN               :$domain"$NC
 echo -e "$green City                 :$CITY"$NC
 echo -e "$green SERVER               :$ISP"$NC
-echo -e "${RED}Client Name           :$name${NC}"
-echo -e "${RED}Expired Date          :$exp${NC}"
-echo -e "$green Provided By          :@anakjati567"$NC
+echo -e "${RED}Client Name : $name${NC}"
+echo -e "${RED}Expired Date : $exp${NC}"
+echo -e "$green Provided By             :@anakjati567"$NC
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
