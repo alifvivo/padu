@@ -60,7 +60,7 @@ echo -e "$PURPLE ██╔══██╗██╔══██╗██║░█
 echo -e "$PURPLE ██████╔╝███████║█████═╝░░╚████╔╝░███████║ $NC"
 echo -e "$PURPLE ██╔═══╝░██╔══██║██╔═██╗░░░╚██╔╝░░██╔══██║ $NC"
 echo -e "$PURPLE ██║░░░░░██║░░██║██║░╚██╗░░░██║░░░██║░░██║ $NC"
-echo -e "$PURPLE╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝ $NC"
+echo -e "$PURPLE ╚═╝░░░░░╚═╝░   ╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝ $NC"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
@@ -82,8 +82,8 @@ echo -e "$green IP VPS               :$IPVPS"$NC
 echo -e "$green DOMAIN               :$domain"$NC
 echo -e "$green City                 :$CITY"$NC
 echo -e "$green SERVER               :$ISP"$NC
-echo -e "${RED}Client Name           :$name${NC}"
-echo -e "${RED}Expired Date          :$exp${NC}"
+echo -e "$green Client Name           :$name${NC}"
+echo -e "$green Expired Date          :$exp${NC}"
 echo -e "$green Provided By          :@anakjati567"$NC
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
