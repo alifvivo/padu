@@ -53,7 +53,7 @@ tele=$(cat /home/contact)
 	swap=$( free -m | awk 'NR==4 {print $2}' )
 clear
 echo -e ""
-figlet ChiliMerah | lolcat
+figlet chillivpn | lolcat
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
