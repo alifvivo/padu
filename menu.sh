@@ -61,14 +61,14 @@ echo -e "${ORANGE}════════════════════�
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "$green CPU Model            :$CYAN $cname"$NC
-echo -e "$green CPU Frequency        :$CYAN$freq MHz"$NC
+echo -e "$green CPU Frequency        :$CYAN $freq MHz"$NC
 echo -e "$green Number Of Cores      :$CYAN $cores"$NC
 echo -e "$green CPU Usage            :$CYAN $cpu_usage"$NC
 echo -e "$green Operating System     :$CYAN "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`$NC
 echo -e "$green Kernel               :$CYAN `uname -r`"$NC
 echo -e "$green Bash Ver             :$CYAN $versibash"$NC
 echo -e "$green Total Amount Of RAM  :$CYAN $tram MB"$NC
-echo -e "$green Used RAM             :$uram MB"$NC
+echo -e "$green Used RAM             :$CYAN $uram MB"$NC
 echo -e "$green Free RAM             :$CYAN $fram MB"$NC
 echo -e "$green System Uptime        :$CYAN $uptime $DF( From VPS Booting )"$NC
 echo -e "$green Download             :$CYAN $downloadsize GB ( From Startup / VPS Booting )"$NC
@@ -81,7 +81,7 @@ echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
 echo -e "$green Provided By          :$CYAN @anakjati567"$NC
-echo -e "$green Script Version       :$CYAN  $Sver"
+echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
