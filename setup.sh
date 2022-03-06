@@ -1,25 +1,5 @@
 #!/bin/bash
 # Setup
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-ORANGE='\033[0;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-LIGHT='\033[0;37m'
-BOLD='\e[1m'
-BLINK='\e[5m'
-END='\e[0m'
-RED_B='\e[1;91m'
-GREEN_B='\e[1;92m'
-YELLOW_B='\e[1;93m'
-BLUE_B='\e[1;94m'
-PURPLE_B='\e[1;95m'
-CYAN_B='\e[1;96m'
-WHITE_B='\e[1;97m'
-RESET='\e[0m'
-
 # ===================
 
 # Root Check
@@ -47,15 +27,11 @@ fi
 
 echo ''
 clear
-echo ""
-echo -e "$RED         ██████╗░░█████╗░██╗░░██╗██╗░░░██╗░█████╗░ $NC"
-echo -e "$RED         ██╔══██╗██╔══██╗██║░██╔╝╚██╗░██╔╝██╔══██╗ $NC"
-echo -e "$RED         ██████╔╝███████║█████═╝░░╚████╔╝░███████║ $NC"
-echo -e "$RED         ██╔═══╝░██╔══██║██╔═██╗░░░╚██╔╝░░██╔══██║ $NC"
-echo -e "$RED         ██║░░░░░██║░░██║██║░╚██╗░░░██║░░░██║░░██║ $NC"
-echo -e "$RED         ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝ $NC"
+echo ''
+figlet PakyaVPN | lolcat
+echo "                                                              "
 echo '                ⚡ PREMIUM SPEED SCRIPT ⚡     ' | lolcat
-echo '...........................................................' | lolcat
+echo ' .......................................................... '
 echo '                  Autoscript By PAKYAVPN' | lolcat
 echo '                   NEW FULL VERSION 2022 ' | lolcat
 echo '                     CONTACT TELEGRAM' | lolcat
