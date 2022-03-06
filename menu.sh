@@ -55,7 +55,7 @@ name=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep
 exp=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
 echo -e ""
-figlet TRICKSTER | lolcat
+figlet IKKEVPN | lolcat
 echo -e "$green Premium Script"$NC
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
@@ -80,7 +80,7 @@ echo -e "$green City                 :$CITY"$NC
 echo -e "$green SERVER               :$ISP"$NC
 echo -e "$green Client Name          :$name${NC}"
 echo -e "$green Expired Date         :$exp${NC}"
-echo -e "$green Provided By          :@TricksterMode"$NC
+echo -e "$green Provided By          :@crtujuh"$NC
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
@@ -107,7 +107,7 @@ echo -e "$green (•17) $NC Restore Data Vps      $green (•25) $NC Displaying 
 echo -e "$green (•18) $NC WEBMIN MENU           $green (•26) $NC Info Script Auto "
 echo -e "$green (•19) $NC UPDATE TO KERNEL      $green (•27) $NC Show System Status "
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
-echo -e " Premium VPS by @TricksterMode"
+echo -e " Premium VPS by @crtujuh"
 echo -e " Thank you for using script by PAKYAVPN"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
