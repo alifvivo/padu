@@ -69,8 +69,8 @@ echo -e "$green Kernel               :$CYAN `uname -r`"$NC
 echo -e "$green Bash Ver             :$CYAN $versibash"$NC
 echo -e "$green Total Amount Of RAM  :$CYAN $tram MB"$NC
 echo -e "$green Used RAM             :$uram MB"$NC
-echo -e "$green Free RAM             :$fram MB"$NC
-echo -e "$green System Uptime        :$uptime $DF( From VPS Booting )"$NC
+echo -e "$green Free RAM             :$CYAN $fram MB"$NC
+echo -e "$green System Uptime        :$CYAN $uptime $DF( From VPS Booting )"$NC
 echo -e "$green Download             :$CYAN $downloadsize GB ( From Startup / VPS Booting )"$NC
 echo -e "$green Upload               :$CYAN $uploadsize GB ( From Startup / VPS Booting )"$NC
 echo -e "$green ISP NAME             :$CYAN $ISP"$NC
