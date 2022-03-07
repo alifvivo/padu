@@ -55,7 +55,12 @@ name=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep
 exp=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
 echo -e ""
-figlet PAKYAVPN | lolcat
+echo -e "$RED ████████╗████████╗██╗░░░░░░█████╗░░░██╗██╗██╗░░░██╗ $NC"
+echo -e "$RED ╚══██╔══╝╚══██╔══╝██║░░░░░██╔══██╗░██╔╝██║██║░░░██║ $NC"
+echo -e "$RED ░░░██║░░░░░░██║░░░██║░░░░░███████║██╔╝░██║██║░░░██║ $NC"
+echo -e "$RED ░░░██║░░░░░░██║░░░██║░░░░░██╔══██║███████║██║░░░██║ $NC"
+echo -e "$RED ░░░██║░░░░░░██║░░░███████╗██║░░██║╚════██║╚██████╔╝ $NC"
+echo -e "$RED ░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝░░░░░╚═╝░╚═════╝░ $NC"
 echo -e "$green Premium Script"$NC
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
@@ -80,7 +85,7 @@ echo -e "$green City                 :$CYAN $CITY"$NC
 echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
-echo -e "$green Provided By          :$CYAN @anakjati567"$NC
+echo -e "$green Provided By          :$CYAN @Only1yoU"$NC
 echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
@@ -108,7 +113,7 @@ echo -e "$green (•17) $NC Restore Data Vps      $green (•25) $NC Displaying 
 echo -e "$green (•18) $NC WEBMIN MENU           $green (•26) $NC Info Script Auto "
 echo -e "$green (•19) $NC UPDATE TO KERNEL      $green (•27) $NC Show System Status "
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
-echo -e " Premium VPS by @anakjati567"
+echo -e " Premium VPS by @Only1yoU"
 echo -e " Thank you for using script by PAKYAVPN"
 echo -e "${ORANGE}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
