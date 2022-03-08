@@ -1,4 +1,5 @@
 #!/bin/bash
+# Setup
 green='\e[32m'
 RED='\033[0;31m'
 NC='\033[0m'
@@ -8,7 +9,7 @@ BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 NC='\033[0;37m'
-# Setup
+# ===================
 
 # Root Check
 if [ "${EUID}" -ne 0 ]; then
