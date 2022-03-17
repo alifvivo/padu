@@ -86,7 +86,7 @@ echo -e "$green City                 :$CYAN $CITY"$NC
 echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
-echo -e "$green Provided By          :$CYAN @anakjati567"$NC
+echo -e "$green Provided By          :$CYAN @kelvint1101"$NC
 echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
@@ -98,7 +98,7 @@ echo -e "$green (•4) $NC PANEL TROJAN                $green (10) $NC Check Usa
 echo -e "$green (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
 echo -e "$green (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e " Premium VPS by @anakjati567"
+echo -e " Premium VPS by @kelvint1101"
 echo -e " Thank you for using script by PAKYAVPN"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
