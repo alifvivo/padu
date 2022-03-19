@@ -1,5 +1,4 @@
 #!/bin/bash
-
 clear
 echo -e "\e[0m                                                                            "
 echo -e "\e[92m                     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█                                "
