@@ -1,5 +1,5 @@
 #!/bin/bash
-Yellow='\e[0;33m'
+White='\e[0;37m'
 green='\e[32m'
 RED='\033[0;31m'
 NC='\033[0m'
@@ -56,12 +56,12 @@ name=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep
 exp=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
 echo -e ""
-echo -e "$RED ████████╗██████╗░██╗░█████╗░██╗░░██╗░██████╗ $NC"
-echo -e "$RED ╚══██╔══╝██╔══██╗██║██╔══██╗██║░██╔╝██╔════╝ $NC"
-echo -e "$RED ░░░██║░░░██████╔╝██║██║░░╚═╝█████═╝░╚█████╗░ $NC"
-echo -e "$RED ░░░██║░░░██╔══██╗██║██║░░██╗██╔═██╗░░╚═══██╗ $NC"
-echo -e "$RED ░░░██║░░░██║░░██║██║╚█████╔╝██║░╚██╗██████╔╝ $NC"
-echo -e "$RED ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝╚═════╝░ $NC"
+echo -e "$White ████████╗██████╗░██╗░█████╗░██╗░░██╗░██████╗ $NC"
+echo -e "$White ╚══██╔══╝██╔══██╗██║██╔══██╗██║░██╔╝██╔════╝ $NC"
+echo -e "$White ░░░██║░░░██████╔╝██║██║░░╚═╝█████═╝░╚█████╗░ $NC"
+echo -e "$White ░░░██║░░░██╔══██╗██║██║░░██╗██╔═██╗░░╚═══██╗ $NC"
+echo -e "$White ░░░██║░░░██║░░██║██║╚█████╔╝██║░╚██╗██████╔╝ $NC"
+echo -e "$White ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝╚═════╝░ $NC"
 echo -e "$green Premium Script"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
@@ -86,7 +86,7 @@ echo -e "$green City                 :$CYAN $CITY"$NC
 echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
-echo -e "$green Provided By          :$CYAN @kelvint1101"$NC
+echo -e "$green Provided By          :$CYAN @anakjati567"$NC
 echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
@@ -98,7 +98,7 @@ echo -e "$green (•4) $NC PANEL TROJAN                $green (10) $NC Check Usa
 echo -e "$green (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
 echo -e "$green (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e " Premium VPS by @kelvint1101"
+echo -e " Premium VPS by @anakjati567"
 echo -e " Thank you for using script by PAKYAVPN"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
