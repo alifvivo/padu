@@ -1,23 +1,5 @@
-Skip to content
-nikstore
-/
-scriptvps
-Public
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-scriptvps/about.sh
-
-adamtech sc
- 0 contributors
-59 lines (59 sloc)  5.27 KB
 #!/bin/bash
+
 clear
 echo -e "\e[0m                                                                            "
 echo -e "\e[92m                     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█                                "
