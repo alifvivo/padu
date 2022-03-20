@@ -1,14 +1,5 @@
             #!/bin/bash
-            green='\e[32m'
-            RED='\033[0;31m'
-            NC='\033[0m'
-            BGBLUE='\e[1;44m'
-            ORANGE='\033[0;33m'
-            BLUE='\033[0;34m'
-            PURPLE='\033[0;35m'
-            CYAN='\033[0;36m'
-            NC='\033[0;37m'
-            clear
+
 
              if [ ! -e /usr/local/bin/reboot ]; then
              echo '#!/bin/bash' > /usr/local/bin/reboot 
@@ -19,22 +10,20 @@
              chmod +x /usr/local/bin/reboot
              fi
 
-             echo -e "${green} ══════════════════════════════════════════${NC}"
-             echo -e " ${BGBLUE}         Auto Reboot Server               ${NC}"
-             echo -e "${green} ══════════════════════════════════════════${NC}"
-             echo -e "$green (•1) $NC Set Auto-Reboot 1 jam sekali"
-             echo -e "$green (•2) $NC Set Auto-Reboot 6 jam sekali"
-             echo -e "$green (•3) $NC Set Auto-Reboot 12 jam sekali"
-             echo -e "$green (•4) $NC Set Auto-Reboot 1 hari sekali"
-             echo -e "$green (•5) $NC Set Auto-Reboot 1 minggu sekali"
-             echo -e "$green (•6) $NC Set Auto-Reboot 1 bulan sekali"
-             echo -e "$green (•7) $NC Matikan Auto-Reboot"
-             echo -e "$green (•8) $NC Lihat log reboot"
-             echo -e "$green (•9) $NC Hapus log reboot"
-             echo -e "${green} ══════════════════════════════════════════${NC}"
-             echo -e   ""
-             echo -e "Press CTRL+C to Return/Exit"
-             read -p "Please Enter The Correct Number : "
+             echo "-------------------------------------------"
+             echo "Menu Sistem Reboot Otomatis"
+             echo "-------------------------------------------"
+             echo "1.  Set Auto-Reboot 1 jam sekali"
+             echo "2.  Set Auto-Reboot 6 jam sekali"
+             echo "3.  Set Auto-Reboot 12 jam sekali"
+             echo "4.  Set Auto-Reboot 1 hari sekali"
+             echo "5.  Set Auto-Reboot 1 minggu sekali"
+             echo "6.  Set Auto-Reboot 1 bulan sekali"
+             echo "7.  Matikan Auto-Reboot"
+             echo "8.  Lihat log reboot"
+             echo "9.  Hapus log reboot"
+             echo "-------------------------------------------"
+             read -p "Tulis Pilihan Anda (angka): " x
 
              if test $x -eq 1; then
              echo "10 * * * * root /usr/local/bin/reboot" > /etc/cron.d/reboot
