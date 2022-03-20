@@ -9,9 +9,6 @@ BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 NC='\033[0;37m'
-MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
 clear
 echo -e ""
 # DNS Patch
