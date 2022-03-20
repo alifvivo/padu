@@ -12,9 +12,7 @@ NC='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 IZIN=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
-clear
-echo "User premium Only ,Sila Contact Admin PAKYAVPN"
-sleep 4
+sleep 3
 else
 exit 0
 fi
