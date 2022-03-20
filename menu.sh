@@ -13,6 +13,11 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 IZIN=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 clear
+else
+echo "User premium Only ,Sila Contact Admin PAKYAVPN"
+exit 0
+fi
+clear
 echo -e ""
 # DNS Patch
 tipeos2=$(uname -m)
