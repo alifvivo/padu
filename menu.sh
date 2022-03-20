@@ -91,8 +91,6 @@ red "Your script need to update first !"
 exit 0
 elif [ "$res" = "Permission Accepted..." ]; then
 green "Tahniah! Anda Dibenarkan menggunakan PAKYAVPN..."
-sleep 2
-else
 clear
 blue        "                   ...              "             
 blue        "Anda Tidak Dibenarkan Menggunakan Script ini!    " 
