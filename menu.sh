@@ -184,7 +184,7 @@ echo -e "$PURPLE (•4) $NC PANEL TROJAN                $green (10) $NC Check Us
 echo -e "$PURPLE (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
 echo -e "$PURPLE (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "$Lyellow Premium VPS by @anakjati567"$NC
+echo -e "$Lyellow Premium VPS by @DruGzVpn"$NC
 echo -e "$Lyellow Thank you for using script by PAKYAVPN"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
