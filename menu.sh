@@ -1,5 +1,5 @@
 #!/bin/bash
-Yellow='\e[0;33m'
+Lyellow='\e[1;93m'
 green='\e[32m'
 RED='\033[0;31m'
 NC='\033[0m'
@@ -11,7 +11,7 @@ CYAN='\033[0;36m'
 NC='\033[0;37m'
 # ==========================================
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+biji=`date +"%d-%m-%Y" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
@@ -147,13 +147,7 @@ tele=$(cat /home/contact)
 name=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $2}')
 exp=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
-echo -e ""
-echo -e "$RED ████████╗██████╗░██╗░█████╗░██╗░░██╗░██████╗ $NC"
-echo -e "$RED ╚══██╔══╝██╔══██╗██║██╔══██╗██║░██╔╝██╔════╝ $NC"
-echo -e "$RED ░░░██║░░░██████╔╝██║██║░░╚═╝█████═╝░╚█████╗░ $NC"
-echo -e "$RED ░░░██║░░░██╔══██╗██║██║░░██╗██╔═██╗░░╚═══██╗ $NC"
-echo -e "$RED ░░░██║░░░██║░░██║██║╚█████╔╝██║░╚██╗██████╔╝ $NC"
-echo -e "$RED ░░░╚═╝░░░╚═╝░░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝╚═════╝░ $NC"
+figlet DRUGVPN | lolcat
 echo -e "$green Premium Script"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
@@ -178,7 +172,7 @@ echo -e "$green City                 :$CYAN $CITY"$NC
 echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
-echo -e "$green Provided By          :$CYAN @anakjati567"$NC
+echo -e "$green Provided By          :$CYAN @DruGzVpn"$NC
 echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
@@ -190,8 +184,8 @@ echo -e "$green (•4) $NC PANEL TROJAN                $green (10) $NC Check Usa
 echo -e "$green (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
 echo -e "$green (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e " Premium VPS by @anakjati567"
-echo -e " Thank you for using script by PAKYAVPN"
+echo -e "$Lyellow Premium VPS by @anakjati567"$NC
+echo -e "$Lyellow Thank you for using script by PAKYAVPN"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
 echo -e "[Ctrl + C] For exit from main menu"
