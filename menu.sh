@@ -147,7 +147,7 @@ tele=$(cat /home/contact)
 name=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $2}')
 exp=$(curl -sS https://raw.githubusercontent.com/alifvivo/ip/main/access | grep $IPVPS | awk '{print $3}')
 clear
-figlet DRUGVPN | lolcat
+figlet SQUIDWARD | lolcat
 echo -e "$green Premium Script"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                      SERVER INFORMATION                    ${NC}"
@@ -172,7 +172,7 @@ echo -e "$green City                 :$CYAN $CITY"$NC
 echo -e "$green SERVER               :$CYAN $ISP"$NC
 echo -e "$green Client Name          :$CYAN $name${NC}"
 echo -e "$green Expired Date         :$CYAN $exp${NC}"
-echo -e "$green Provided By          :$CYAN @DruGzVpn"$NC
+echo -e "$green Provided By          :$CYAN @SandakanVPNTrickster"$NC
 echo -e "$green Script Version       :$CYAN $Sver"
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGBLUE}                     [ MAIN MENU ]                          ${NC}"
@@ -184,7 +184,7 @@ echo -e "$PURPLE (•4) $NC PANEL TROJAN                $green (10) $NC Check Us
 echo -e "$PURPLE (•5) $NC PANEL SS & SSR              $green (11) $NC REBOOT VPS "
 echo -e "$PURPLE (•6) $NC PANEL L2TP, PPTP, SSTP      $green (12) $NC CHECK RUNNING SC "
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
-echo -e "$Lyellow Premium VPS by @DruGzVpn"$NC
+echo -e "$Lyellow Premium VPS by @SandakanVPNTrickster"$NC
 echo -e "$Lyellow Thank you for using script by PAKYAVPN"$NC
 echo -e "${green}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
