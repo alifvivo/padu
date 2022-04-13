@@ -116,7 +116,7 @@ echo -e " $GREEN Script Version       : $Sver"$NC
 echo -e " $GREEN Client Name          : $name"$NC
 echo -e " $GREEN Expired On           : $exp"$NC
 echo -e " $GREEN Expired In           : $remain Days"$NC
-echo -e " $GREEN Provided By          : $@SandakanVPNTrickster"$NC
+echo -e " $GREEN Provided By          : $@DruGzVpn"$NC
 echo -e "${Lred}════════════════════════════════════════════════════════════${NC}"
 echo -e "${BGWHITE}                     [ MAIN MENU ]                          ${NC}"
 echo -e "${Lred}════════════════════════════════════════════════════════════${NC}"
@@ -127,7 +127,7 @@ echo -e " $PURPLE (•4) $NC $Lyellow PANEL TROJAN              $PURPLE (10) $NC
 echo -e " $PURPLE (•5) $NC $Lyellow PANEL SS & SSR            $PURPLE (11) $NC $Lyellow REBOOT VPS $NC"
 echo -e " $PURPLE (•6) $NC $Lyellow PANEL L2TP, PPTP, SSTP    $PURPLE (12) $NC $Lyellow CHECK RUNNING SC $NC"
 echo -e "${Lred}════════════════════════════════════════════════════════════${NC}"
-echo -e " $Lyellow Premium VPS by @SandakanVPNTrickster"$NC
+echo -e " $Lyellow Premium VPS by @DruGzVpn"$NC
 echo -e " $Lyellow Thank you for using script by PAKYAVPN"$NC
 echo -e "${Lred}════════════════════════════════════════════════════════════${NC}"
 echo -e   ""
