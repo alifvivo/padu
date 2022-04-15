@@ -55,7 +55,8 @@ EOF
 ssl_path_crt="/etc/v2ray/v2ray.crt"
 ssl_path_key="/etc/v2ray/v2ray.key"
 Port1=6769
-Port2=8000
+Port2=6769
+Port3=8000
 uuid=$(cat /proc/sys/kernel/random/uuid)
 
 # // Vless Splice
@@ -125,7 +126,7 @@ cat > /etc/xray-mini/vless-splice.json << END
 {
     "inbounds": [
         {
-            "port": ${Port1,
+            "port": ${Port2},
             "protocol": "vless",
             "settings": {
                 "clients": [
@@ -171,7 +172,7 @@ cat > /etc/xray-mini/xtrojan.json << END
 {
     "inbounds": [
         {
-            "port": ${Port2},
+            "port": ${Port3},
             "protocol": "trojan",
             "settings": {
                 "clients": [
