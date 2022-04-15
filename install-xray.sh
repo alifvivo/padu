@@ -234,7 +234,12 @@ wget -O add-trxtls "https://raw.githubusercontent.com/alifvivo/padu/main/add-trx
 wget -O del-trxtls "https://raw.githubusercontent.com/alifvivo/padu/main/del-trxtls.sh"
 wget -O renew-trxtls "https://raw.githubusercontent.com/alifvivo/padu/main/renew-trxtls.sh"
 wget -O cek-trxtls "https://raw.githubusercontent.com/alifvivo/padu/main/cek-trxtls.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/alifvivo/padu/main/cek-vless.sh"
+wget -O cek-xray "https://raw.githubusercontent.com/alifvivo/padu/main/cek-xray.sh"
+chmod +x /usr/bin/add-trxtls
+chmod +x /usr/bin/del-trxtls
+chmod +x /usr/bin/renew-trxtls
+chmod +x /usr/bin/cek-trxtls
+chmod +x /usr/bin/cek-xray
 
 # // Remove Not Used Files
 rm -f install-xray.sh
